@@ -5,7 +5,7 @@ module.exports = {
   ROSTER_BOARD_ID: 18420120506, // User Roster as of September
   HOLIDAYS_BOARD_ID: 18423579621, // Company Holidays
 
-  HOURS_THRESHOLD: 50,
+  HOURS_THRESHOLD: 40,
 
   // Roster Country label -> Company Holidays Country label
   ROSTER_TO_HOLIDAY_COUNTRY: {
