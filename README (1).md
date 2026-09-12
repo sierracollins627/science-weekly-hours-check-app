@@ -1,6 +1,6 @@
 # Weekly Hours Check — monday code app (new, separate app)
 
-Flags Science team members under 50 hrs this week (Sat–Fri), excluding
+Flags Science team members under 40 hrs this week (Sat–Fri), excluding
 anyone with PTO or a matching company holiday. On each run, sends you
 (test phase only) a styled HTML email with a color-coded bar per flagged
 person, and also returns output fields so you can chain a native monday
