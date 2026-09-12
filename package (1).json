@@ -1,7 +1,7 @@
 {
   "name": "weekly-hours-check-app",
   "version": "1.0.0",
-  "description": "monday code app — flags Science team members under 50 hrs this week (Sat-Fri), excluding anyone with PTO or a matching company holiday.",
+  "description": "monday code app — flags Science team members under 40 hrs this week (Sat-Fri), excluding anyone with PTO or a matching company holiday.",
   "main": "src/index.js",
   "scripts": {
     "start": "node src/index.js"
