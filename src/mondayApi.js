@@ -3,17 +3,16 @@ const { MONDAY_API_URL } = require("./config");
 
 /**
  * Runs a GraphQL query/mutation against the monday.com API.
- * Uses the MONDAY_API_TOKEN runtime secret (set in Developer Center ->
- * Host on monday -> Server-side code -> Secrets), NOT the app's signing
- * secret — this token is what actually reads the boards.
+ * `token` must be passed in explicitly (fetched via secrets.js's
+ * getSecrets()) — monday code Secrets are not available on process.env.
  */
-async function mondayQuery(query, variables = {}) {
+async function mondayQuery(query, variables = {}, token) {
   const res = await axios.post(
     MONDAY_API_URL,
     { query, variables },
     {
       headers: {
-        Authorization: process.env.MONDAY_API_TOKEN,
+        Authorization: token,
         "Content-Type": "application/json",
       },
     }
